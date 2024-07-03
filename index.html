@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+            <ul class="nav-links">
+                <li><a href="#"><span class="material-icons">home</span> Home</a></li>
+                <li><a href="#"><span class="material-icons">book</span> Courses</a></li>
+                <li><a href="#"><span class="material-icons">article</span> Blog</a></li>
+                <li><a href="#"><span class="material-icons">help</span> FAQ</a></li>
+            </ul>
+            <div class="contact"><a href="tel:+8801733017521">+880 1733 017521</a></div>
+            <div class="campus"><a href="#">Campus</a></div>
+            <div class="hamburger">
+                <span class="material-icons">menu</span>
+            </div>
+        </nav>
+    </header>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
+    <!--  done header section     -->
+    <main>
+        <section class="main-section">
+            <div class="image-area">
+                <a href="#"><img src="img/1.svg" alt="Image 1"></a>
+                <p class="image-details"><strong>সকলেই যে সকল সুযোগ সুবিধাগুলো পাবে </strong><br>১. পাঠদানের জন্য রয়েছেন বিষয়ভিত্তিক অভিজ্ঞ শিক্ষকমন্ডলী।<br>
+                    ২. সাপ্তাহিক পরিক্ষার মাধ্যমে মৃধা বিকাশ।<br>
+                    ৩. নিয়মিত বিভিন্ন আন্তর্জাতিক ক্বারীদের লাহানে তেলাওয়াত মাশক। 
+                    </p>
+            </div>
+            <div class="image-area">
+                <a href="#"><img src="img/2.svg" alt="Image 2"></a>
+                <p class="image-details"><strong>সকলেই যে সকল সুযোগ সুবিধাগুলো পাবে</strong> <br>৪. পরিপূর্ণ সুন্নতের অনুসারী হিসেবে আপনার সন্তানকে তৈরী করার চেষ্টা করা।<br>
+                    ৫. কোলাহল মুক্ত, আনন্দদায়ক, সুন্দর, সাবলীল ও পরিচ্ছন্ন পরিবেশে শিক্ষা দান। <br>
+                    ৬. ঈমানী আলোচনার মাধ্যমে ক্লাস শুরু করা।</p>
+            </div>
+            <div class="image-area">
+                <a href="#"><img src="img/3.svg" alt="Image 3"></a>
+                <p class="image-details"><strong>সকলেই যে সকল সুযোগ সুবিধাগুলো পাবে</strong> <br>৭. ইল্‌ম দ্বীন শিক্ষার পাশা-পাশি শরীয়াহ্, পর্দা, সহীহ্ আমল ও উত্তম চরিত্রের তরবীয়তের বিশেষ গুরুত্ব প্রদান।<br>
+                    ৮. ইল্‌ম দাওয়াত ও আমলকে একত্রে জমা করা। আমল করতে করতে ছাত্ররা ইল্‌ম শিখবে। আমল ব্যাপারে সর্বোচ্চ তারগীব  অনুশীলন।</p>
+            </div>
+        </section>
+    </main>
+        <!-- Paragraph area -->
+        <section class="paragraph-area">
+            <div class="content">
+                <h2>Why Join Global Islamic Care?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <span class="material-icons">school</span>
+                        <h3>Skilled and Experienced Teachers</h3>
+                        <p>The faculty of Taibah Academy includes renowned and skilled scholars of the country. Also there are experienced instructors in teacher's training courses.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="material-icons">video_library</span>
+                        <h3>Audio/Video Lectures</h3>
+                        <p>Each course will have audio or video lectures. On the basis of class notes or modules, the respected course teachers will present the course topics in a very clear language.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="material-icons">verified</span>
+                        <h3>Certificate of Completion</h3>
+                        <p>Those who successfully complete the course after reading each module and listening to the lecture and get at least 60% marks in all the exams including MCQ will be given a certificate of completion of the course.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="material-icons">library_books</span>
+                        <h3>Course Modules</h3>
+                        <p>Written modules for most courses will be provided. It will be accompanied by one or more reference books so that the students can read them and gain basic understanding of the subject.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Faculty Section -->
+    <!-- Faculty Section -->
+    <section class="faculty">
+        <h2>Our Esteemed Faculty Members</h2>
+        <div class="faculty-member">
+            <img src="img/profile-icon.svg" alt="Faculty 1">
+            <div class="details">
+                <h3>H.Robiul Islam</h3>
+                <p>Faculty Member 1's details and description go here. This can include their qualifications, experience, and any other relevant information.</p>
+            </div>
+        </div>
+        <div class="faculty-member">
+            <img src="img/profile-icon.svg" alt="Faculty 2">
+            <div class="details">
+                <h3>Hafez Maulana Mujahidul Islam</h3>
+                <p>Faculty Member 2's details and description go here. This can include their qualifications, experience, and any other relevant information.</p>
+            </div>
+        </div>
+        <div class="faculty-member">
+            <img src="img/profile-icon.svg" alt="Faculty 3">
+            <div class="details">
+                <h3>Hafez Maulana Abdul Ahad</h3>
+                <p>Faculty Member 3's details and description go here. This can include their qualifications, experience, and any other relevant information.</p>
+            </div>
+        </div>
+        <div class="faculty-member">
+            <img src="img/profile-icon.svg" alt="Faculty 4">
+            <div class="details">
+                <h3>Faculty Name 4</h3>
+                <p>Faculty Member 4's details and description go here. This can include their qualifications, experience, and any other relevant information.</p>
+            </div>
+        </div>
+        <div class="faculty-member">
+            <img src="img/profile-icon.svg" alt="Faculty 5">
+            <div class="details">
+                <h3>Faculty Name 5</h3>
+                <p>Faculty Member 5's details and description go here. This can include their qualifications, experience, and any other relevant information.</p>
+            </div>
+        </div>
+        <div class="faculty-member">
+            <img src="img/profile-icon.svg" alt="Faculty 6">
+            <div class="details">
+                <h3>Faculty Name 6</h3>
+                <p>Faculty Member 6's details and description go here. This can include their qualifications, experience, and any other relevant information.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="footer-column">
+                <h3>GET STARTED</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>BROWSE</h3>
+                <ul>
+                    <li><a href="#">Campus</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">Course FAQ</a></li>
+                    <li><a href="#">Help Desk</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <p>© 2024 Global Islamic Care. All Right Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
