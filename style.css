@@ -97,3 +97,90 @@ nav ul li {
         font-size: 1rem;
     }
 }
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #ff6b6b, #ffcc00, #6bff6b, #6bcfff, #b66bff); /* Matching Header Background */
+    background-size: 500% 500%;
+    animation: gradientAnimation 15s linear infinite;
+    padding: 40px 20px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-navigation ul li {
+    display: inline;
+}
+
+.footer-navigation .nav-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.footer-navigation .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.footer-social {
+    margin: 40px 0;
+}
+
+.footer-social .social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social .social-icon:hover {
+    transform: scale(1.2);
+    color: #ffcc00; /* Hover Color */
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-navigation ul {
+        flex-direction: row; /* Keep buttons in a row on smaller screens */
+        gap: 10px;
+    }
+
+    .footer-navigation .nav-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .footer-social .social-icon {
+        font-size: 1.2rem;
+    }
+}
