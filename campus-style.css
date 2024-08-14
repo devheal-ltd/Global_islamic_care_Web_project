@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.campus-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.country-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.country-box h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.country-box p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.flag {
+    width: 100%;
+    height: 150px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.flag-bangladesh {
+    background: linear-gradient(90deg, green 50%, red 50%);
+}
+
+.flag-usa {
+    background: linear-gradient(90deg, blue 20%, white 20%, red 60%);
+}
+
+.flag-uk {
+    background: linear-gradient(90deg, red 20%, white 20%, blue 60%);
+}
+
+.flag-canada {
+    background: linear-gradient(90deg, red 50%, white 50%);
+}
+
+.flag-australia {
+    background: linear-gradient(90deg, blue 70%, red 30%);
+}
+
+.flag-germany {
+    background: linear-gradient(90deg, black 33%, red 33%, yellow 33%);
+}
+
+.flag-japan {
+    background: white;
+    position: relative;
+}
+
+.flag-japan::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
