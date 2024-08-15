@@ -23,10 +23,12 @@
     </section>
     <section class="feedback-form">
         <h2>Your Feedback</h2>
-        <form action="send-feedback.php" method="POST">
-            <textarea name="comments" placeholder="Write your comments here..." required></textarea>
+        <form id="contactForm">
+            <textarea name="comments" id="comments" placeholder="Write your comments here..." required></textarea>
             <button type="submit">Submit</button>
         </form>
+        
+        <div id="response"></div>        
     </section>
     <footer>
         <h2>Our Location</h2>
@@ -38,5 +40,13 @@
         </div>
         <p>&copy; 2024 Global Islamic Care. All rights reserved.</p>
     </footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("tq0bATqDSTPoBMRCc");
+   })();
+</script>
+<script src="script_emailjs.js"></script>
+
 </body>
 </html>
