@@ -98,6 +98,25 @@ nav ul li {
     }
 }
 /* Service Section Styles */
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner-container {
+      padding: 10px;
+    }
 /* Footer Styles */
 footer {
     background: linear-gradient(90deg, #ff6b6b, #ffcc00, #6bff6b, #6bcfff, #b66bff); /* Matching Header Background */
