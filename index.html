@@ -1,78 +1,713 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Islamic Care - Quran Learning and Courses</title>
-    <meta name="description" content="Learn Quran online with Global Islamic Care. We offer comprehensive courses from basic to advanced levels. Join us to enhance your Islamic knowledge.">
-    <meta name="keywords" content="Quran Learning, Islamic Courses, Global Islamic Care, Quran Classes, Online Islamic Education">
-    <meta name="author" content="Global Islamic Care">
-
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Global Islamic Care - Quran Learning and Courses">
-    <meta property="og:description" content="Learn Quran online with Global Islamic Care. We offer comprehensive courses from basic to advanced levels. Join us to enhance your Islamic knowledge.">
-    <meta property="og:image" content="https://yourwebsite.com/image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
-
-    <!-- Twitter Card Meta Tags -->
+    <meta name="description" content="Global Islamic Care - Robiul Islam এর ইসলামিক শিক্ষা প্ল্যাটফর্ম। কুরআন, হাদিস, ইসলামিক জীবনযাপন শিখুন। Robiul Islam বিশ্বব্যাপী ইসলামিক জ্ঞান প্রদান করেন।">
+    <meta name="keywords" content="Robiul Islam, ইসলামিক শিক্ষা, কুরআন, হাদিস, Global Islamic Care, ইসলাম, ধর্মীয় শিক্ষা, বাংলাদেশ, Islamic Learning">
+    <meta name="author" content="Robiul Islam">
+    <meta name="robots" content="index, follow">
+    <meta name="lang" content="bn">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalislamiccare.com/">
+    <meta property="og:title" content="Global Islamic Care - Robiul Islam এর ইসলামিক শিক্ষা প্ল্যাটফর্ম">
+    <meta property="og:description" content="Robiul Islam এর সাথে কুরআন, হাদিস এবং ইসলামিক জীবনযাপন সম্পর্কে শিখুন বিশ্বব্যাপী।">
+    <meta property="og:image" content="https://globalislamiccare.com/og-image.jpg">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Global Islamic Care - Quran Learning and Courses">
-    <meta name="twitter:description" content="Learn Quran online with Global Islamic Care. We offer comprehensive courses from basic to advanced levels. Join us to enhance your Islamic knowledge.">
-    <meta name="twitter:image" content="https://yourwebsite.com/image.jpg">
+    <meta name="twitter:url" content="https://globalislamiccare.com/">
+    <meta name="twitter:title" content="Global Islamic Care - Robiul Islam">
+    <meta name="twitter:description" content="Robiul Islam এর সাথে ইসলামিক শিক্ষা শুরু করুন।">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://globalislamiccare.com/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Global Islamic Care",
+      "url": "https://globalislamiccare.com/",
+      "description": "Robiul Islam এর ইসলামিক শিক্ষা প্ল্যাটফর্ম - কুরআন, হাদিস এবং ইসলামিক জীবনযাপন শিক্ষা",
+      "founder": {
+        "@type": "Person",
+        "name": "Robiul Islam",
+        "url": "https://robiulislam.org/"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "org.robiulislam@gmail.com",
+        "telephone": "+8801733017521"
+      },
+      "sameAs": [
+        "https://robiulislam.org/"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Robiul Islam",
+      "url": "https://robiulislam.org/",
+      "email": "org.robiulislam@gmail.com",
+      "telephone": "+8801733017521",
+      "jobTitle": "Islamic Educator & Founder",
+      "description": "Robiul Islam - ইসলামিক শিক্ষক এবং Global Islamic Care প্ল্যাটফর্মের প্রতিষ্ঠাতা",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Global Islamic Care"
+      },
+      "sameAs": [
+        "https://globalislamiccare.com/",
+        "https://robiulislam.org/"
+      ]
+    }
+    </script>
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Global Islamic Care - Robiul Islam এর ইসলামিক শিক্ষা প্ল্যাটফর্ম | কুরআন, হাদিস, ইসলাম শিক্ষা</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        /* Navigation */
+        nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #10b981;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.1) 50%, rgba(15, 23, 42, 0.9) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -100px;
+            left: -100px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border: 2px solid #10b981;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(16, 185, 129, 0.2);
+            transform: translateY(-3px);
+        }
+
+        /* About Robiul Islam Section */
+        .about-section {
+            max-width: 1200px;
+            margin: 8rem auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+
+        .about-content {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(51, 65, 85, 0.8) 100%);
+            border: 1px solid rgba(71, 85, 105, 0.3);
+            padding: 4rem;
+            border-radius: 15px;
+            line-height: 1.9;
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-content h3 {
+            color: #10b981;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content strong {
+            color: #06b6d4;
+        }
+
+        /* Features Section */
+        .features {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.5) 0%, rgba(16, 185, 129, 0.05) 50%, rgba(15, 23, 42, 0.5) 100%);
+            padding: 6rem 2rem;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(71, 85, 105, 0.3);
+            padding: 2.5rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-card:hover {
+            background: rgba(30, 41, 59, 1);
+            border-color: #10b981;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #10b981;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Services Section */
+        .services {
+            max-width: 1200px;
+            margin: 8rem auto;
+            padding: 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-item {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border-left: 5px solid #10b981;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(71, 85, 105, 0.3);
+        }
+
+        .service-item:hover {
+            border-left-color: #06b6d4;
+            transform: translateX(10px);
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.15);
+        }
+
+        .service-item h3 {
+            color: #10b981;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .service-item p {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
+            padding: 8rem 2rem;
+            margin-top: 4rem;
+            border-top: 2px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: rgba(30, 41, 59, 0.9);
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(71, 85, 105, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item:hover {
+            border-color: #10b981;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h4 {
+            color: #10b981;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-item a, .contact-item p {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .contact-item a:hover {
+            color: #06b6d4;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(71, 85, 105, 0.3);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #10b981;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .feature-card, .service-item, .contact-item {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .about-content {
+                padding: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="site-name">Global Islamic Care</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home" class="nav-button">Home</a></li>
-                    <li><a href="#courses" class="nav-button">Courses</a></li>
-                    <li><a href="campus.html" class="nav-button">Campus</a></li>
-                    <li><a href="contact.html" class="nav-button">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-<main>
-<!-- Services Section -->
-  <header class="banner-container">
-    <img src="01.Pvc_5'-x-3'_01-Copy.jpg" alt="Global Islamic Care Banner" class="responsive-banner">
-  </header>
-<!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-navigation">
-            <ul>
-                <li><a href="#home" class="nav-button">Home</a></li>
-                <li><a href="#courses" class="nav-button">Courses</a></li>
-                <li><a href="campus.html" class="nav-button">Campus</a></li>
-                <li><a href="contact.html" class="nav-button">Contact</a></li>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">☪️ Global Islamic Care</div>
+            <ul class="nav-links">
+                <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                <li><a href="#features">বৈশিষ্ট্য</a></li>
+                <li><a href="#services">সেবা</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
             </ul>
         </div>
-        <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Global Islamic Care</h1>
+            <div class="subtitle">Robiul Islam এর ইসলামিক শিক্ষা প্ল্যাটফর্ম</div>
+            <p>কুরআন, হাদিস এবং ইসলামিক জীবনযাপন সম্পর্কে বিশ্বব্যাপী জ্ঞান শিখুন</p>
+            <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 2rem;">বেসিক ইসলাম থেকে শুরু করে গভীর ধর্মীয় জ্ঞান পর্যন্ত - সবকিছু এক প্ল্যাটফর্মে</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="document.location='https://robiulislam.org/'">শুরু করুন</button>
+                <button class="btn btn-secondary" onclick="document.location='#contact'">আমাদের সাথে যোগাযোগ করুন</button>
+            </div>
         </div>
-        <div class="footer-copyright">
-            <p>&copy; 2024 Global Islamic Care. All Rights Reserved.</p>
+    </section>
+
+    <!-- About Robiul Islam Section -->
+    <section class="about-section" id="about">
+        <h2 class="section-title">Robiul Islam এবং Global Islamic Care</h2>
+        <div class="about-content">
+            <p><strong>Robiul Islam</strong> একজন নিবেদিতপ্রাণ ইসলামিক শিক্ষক এবং <strong>Global Islamic Care</strong> প্ল্যাটফর্মের প্রতিষ্ঠাতা। <strong>Robiul Islam</strong> এর লক্ষ্য হল বিশ্বের প্রতিটি কোণে ইসলামিক জ্ঞান পৌঁছে দেওয়া যা সহজ, সুস্পষ্ট এবং বাস্তবসম্মত।</p>
+            
+            <h3>Robiul Islam এর মিশন</h3>
+            <p><strong>Robiul Islam</strong> বিশ্বাস করেন যে ইসলামিক শিক্ষা সবার জন্য সহজ এবং সুলভ হওয়া উচিত। তিনি <strong>Global Islamic Care</strong> তৈরি করেছেন যাতে মানুষ বাড়িতে বসে, নিজের সময়মতো, নিজের গতিতে ইসলামিক জ্ঞান অর্জন করতে পারে।</p>
+            
+            <h3>Global Islamic Care - Robiul Islam এর প্রতিষ্ঠা</h3>
+            <p><strong>Robiul Islam</strong> এর <strong>Global Islamic Care</strong> প্ল্যাটফর্ম অফার করে:</p>
+            <p>✓ কুরআন অধ্যয়ন এবং তাফসীর | ✓ হাদিস শিক্ষা | ✓ ইসলামিক জীবনযাপন | ✓ দৈনন্দিন আমল এবং ইবাদত | ✓ ইসলামিক ইতিহাস এবং সংস্কৃতি | ✓ ব্যক্তিগত উন্নয়ন এবং আধ্যাত্মিক বৃদ্ধি</p>
+            
+            <h3>Robiul Islam এর শিক্ষা পদ্ধতি</h3>
+            <p><strong>Robiul Islam</strong> বিশ্বাস করেন প্রকৃত শিক্ষা আসে বোঝা থেকে, শুধু মুখস্থ করা থেকে নয়। তাই তিনি <strong>Global Islamic Care</strong এ প্রদান করেন গভীর ব্যাখ্যা, ব্যবহারিক উদাহরণ এবং আধুনিক প্রাসঙ্গিকতা যা <strong>Robiul Islam</strong> এর বিশাল অভিজ্ঞতা এবং জ্ঞানের ফসল।</p>
         </div>
-    </div>
-</footer>
-    <script src="main.js"></script>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">Global Islamic Care এর বৈশিষ্ট্য</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>কুরআন শিক্ষা</h3>
+                    <p>Robiul Islam এর সাথে কুরআন পড়া থেকে শুরু করে গভীর বোঝাপড়া পর্যন্ত শিখুন</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🕌</div>
+                    <h3>হাদিস অধ্যয়ন</h3>
+                    <p>সাহিহ হাদিস এবং তাদের ব্যাখ্যা Robiul Islam এর দ্বারা শিখুন</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤲</div>
+                    <h3>দৈনন্দিন আমল</h3>
+                    <p>ইসলামিক জীবনযাপনের প্রয়োজনীয় সব বিষয় - নামাজ, রোজা, ব্যক্তিগত স্বাস্থ্যবিধি</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>সহজ শিক্ষা</h3>
+                    <p>Robiul Islam জটিল বিষয়গুলি সহজ এবং বোধগম্য করে উপস্থাপন করেন</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>বিশ্বব্যাপী কমিউনিটি</h3>
+                    <p>সারা বিশ্বের মানুষের সাথে Robiul Islam এর প্ল্যাটফর্মে যুক্ত হন</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>সাশ্রয়ী এবং বিনামূল্যে</h3>
+                    <p>Robiul Islam এর অধিকাংশ সামগ্রী বিনামূল্যে উপলব্ধ রাখেন সবার জন্য</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Robiul Islam এর সেবাসমূহ</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>📚 কুরআন পাঠ এবং তাফসীর</h3>
+                <p>Robiul Islam এর নির্দেশনায় কুরআনের সূরা এবং আয়াত শিখুন এবং তাদের গভীর অর্থ বুঝুন</p>
+            </div>
+            <div class="service-item">
+                <h3>🕯️ ইসলামিক আচরণ ও নৈতিকতা</h3>
+                <p>Robiul Islam এর মাধ্যমে ইসলামিক নৈতিকতা এবং আচরণবিধি সম্পর্কে শিখুন</p>
+            </div>
+            <div class="service-item">
+                <h3>💼 পারিবারিক ইসলাম</h3>
+                <p>Robiul Islam ব্যাখ্যা করেন ইসলামে বিবাহ, পারিবারিক জীবন এবং সম্পর্ক সম্পর্কে</p>
+            </div>
+            <div class="service-item">
+                <h3>🏠 ঘরে বসে ইবাদত</h3>
+                <p>Robiul Islam এর সাথে ঘরে বসে সঠিক নিয়মে নামাজ, রোজা এবং অন্যান্য ইবাদত শিখুন</p>
+            </div>
+            <div class="service-item">
+                <h3>🎓 ইসলামিক জ্ঞান উন্নয়ন</h3>
+                <p>Robiul Islam এর উন্নত কোর্স থেকে গভীর ইসলামিক জ্ঞান অর্জন করুন</p>
+            </div>
+            <div class="service-item">
+                <h3>🔗 ব্যক্তিগত পরামর্শ</h3>
+                <p>Robiul Islam এর সাথে ইসলামিক বিষয়ে ব্যক্তিগত পরামর্শ এবং নির্দেশনা পান</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Robiul Islam এর সাথে যোগাযোগ করুন</h2>
+            <p style="text-align: center; color: #cbd5e1; font-size: 1.1rem; margin-bottom: 3rem;">Global Islamic Care সম্পর্কে জানতে বা Robiul Islam এর সাথে যুক্ত হতে আমাদের সাথে যোগাযোগ করুন</p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>ইমেইল</h4>
+                    <a href="mailto:org.robiulislam@gmail.com">org.robiulislam@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h4>ফোন/হোয়াটসঅ্যাপ</h4>
+                    <a href="tel:+8801733017521">+880 1733 017521</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <h4>মূল ওয়েবসাইট</h4>
+                    <a href="https://robiulislam.org/" target="_blank">robiulislam.org</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Global Islamic Care - Robiul Islam এর ইসলামিক শিক্ষা প্ল্যাটফর্ম। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>প্রতিষ্ঠাতা: <a href="https://robiulislam.org/">Robiul Islam</a> | ইমেইল: <a href="mailto:org.robiulislam@gmail.com">org.robiulislam@gmail.com</a> | ফোন: <a href="tel:+8801733017521">+880 1733 017521</a></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;">Global Islamic Care - বিশ্বব্যাপী ইসলামিক জ্ঞান এবং শিক্ষার জন্য আপনার বিশ্বস্ত প্ল্যাটফর্ম</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll animation for cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .service-item, .contact-item').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+
+        // Add scroll-based effects
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const parallaxElements = document.querySelectorAll('.hero::before, .hero::after');
+            parallaxElements.forEach(el => {
+                if (el) {
+                    el.style.transform = `translateY(${scrolled * 0.5}px)`;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
